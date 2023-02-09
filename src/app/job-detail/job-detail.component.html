@@ -1,0 +1,83 @@
+
+<div class="jobDetailsMainPage2">
+    <div [id]="jobDetailExact.id"  class="jobCardDetails2">
+      <div class="generalInfo">
+        <img
+          class="companyLogoCardDetails2"
+          [src]="jobDetailExact.companylogo"
+        >
+        <div>
+         
+          <p [ngStyle]="{ fontWeight: '600' }">Company:</p>
+          <p></p>
+        </div>
+
+        <div>
+          <p [ngStyle]="{ fontWeight: '600' }">Industry:</p>
+          <p>{{jobDetailExact.industry}}</p>
+        </div>
+        <div>
+          <p [ngStyle]="{ fontWeight: '600' }">Job Location:</p>
+          <p>{{jobDetailExact.joblocation}}</p>
+        </div>
+        <div>
+          
+          <p [ngStyle]="{ fontWeight: '600' }">Job Type:</p>
+          <p>{{jobDetailExact.jobtype}}</p>
+        </div>
+        <div>
+        
+          <p [ngStyle]="{ fontWeight: '600' }">Job Role:</p>
+          <p>{{jobDetailExact.jobrole}}</p>
+        </div>
+        <div><p [ngStyle]="{ fontWeight: '600' }">Career Level: </p><p>
+          {{jobDetailExact.careerlevel}}
+        </p></div>
+        <div>
+          <p [ngStyle]="{ fontWeight: '600' }">Date Posted:</p>
+          <p>{{jobDetailExact.createdat | date}}</p>
+        </div>
+        <p [ngStyle]="{ fontWeight: '600' }">Expiry Date: </p>
+        <p>{{jobDetailExact.expirydate | date}}</p>
+      </div>
+      <div class="jobDetailsInfo">
+        
+        <h2 class="jobTitleCardDetails" ></h2> <br>
+        <p [ngStyle]="{ fontWeight: '600'}">Job Description</p> <p class="jobDescriptionDetails">{{jobDetailExact.jobdescription}}</p><br>
+        <p [ngStyle]="{ fontWeight: '600' }">Job Requirements</p><p>{{jobDetailExact.jobrequirements}}</p><br>
+        <div class="additionalInfo">
+          <div>
+        <p [ngStyle]="{ fontWeight: '600' }">Years Of Experience</p><p>{{jobDetailExact.yearsofexperience}}</p></div>
+        <div> <p [ngStyle]="{ fontWeight: '600' }">Country Of Citizenship</p><p>{{jobDetailExact.countryofcitizenship}}</p></div>
+        <div> <p [ngStyle]="{ fontWeight: '600' }">Country Of Residence</p><p>{{jobDetailExact.countryofresidence}}</p></div>
+        <div><p [ngStyle]="{ fontWeight: '600' }">Languages</p><p>{{jobDetailExact.language}}</p></div>
+        <div><p [ngStyle]="{ fontWeight: '600' }">Company Number Of Hires</p><p>{{jobDetailExact.numberofhires}}</p></div>
+        <div><p [ngStyle]="{ fontWeight: '600' }">Salary</p><p>{{jobDetailExact.salary}}</p></div>
+        
+        </div>
+       <button class="applyButton2"
+      
+      >
+        Apply For This Job
+      </button><button class="applyButton2"
+        
+      >
+        Applied
+      </button>
+<button
+                class="addFavCard"
+            
+              >
+               Add to Favorite
+              </button>
+       <button
+                class="addFavCard"
+               
+              >
+               Added to Favorite
+              </button>
+        <p></p>
+      </div>
+
+    
+    </div>

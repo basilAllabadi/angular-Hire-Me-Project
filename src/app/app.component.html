@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="userHomeDiv">
+  <div class="jobsCardsDiv1">
+   
+    <router-outlet></router-outlet>
+  
+  </div>
+
+<div class="video2">
+  <video
+  [ngStyle]= "{ width: '300px' }"
+    autoPlay={true}
+    muted={true}
+    playsInline={true}
+    loop={true}
+  >
+    <source
+      src="https://www.freshresume.co/video/Freshresume_t1_new.mp4"
+      type="video/mp4"
+    />
+  </video>
+  <h1>
+    Create a winning<br>
+    resume in minutes..
+  </h1>
+
+  <a
+    href="https://www.freshresume.co/info/63754103e4e84dce557bca1e"
+    target="blank"
+  >
+    <button class="createCvButton1">Create Your Resume</button>
+  </a>
+</div></div>

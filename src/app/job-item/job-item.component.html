@@ -1,0 +1,45 @@
+<div [id]="jobs.id" class="jobCard1" (click)="itemDetail(jobs.id)">
+    <img
+      class="companyLogoCard1"
+      [src]="jobs.companylogo"
+    >
+    <h2
+      class="jobTitleCard1"
+    
+    >
+      {{jobs.jobtitle}}
+    </h2>
+    <h4
+      class="companyNameCard1"
+      
+    >
+      {{jobs.companyname}} - {{jobs.industry}} - {{jobs.country}}
+    </h4>
+
+    <p class="carerLevelCard1">
+      Career Level : {{jobs.careerlevel}}
+    </p>
+    <p></p>
+    <p class="createdDateCard1" >
+      Date Posted :{{jobs.createdat.substring(0, 10)}}
+    </p>
+    <p class="expiryDateCard1" >
+      Expiry Date: {{jobs.expirydate.substring(0, 10)}}
+    </p>
+    <p class="jobDescription1">
+      {{jobs.jobdescription.substring(0, 150)}}...
+    </p>
+    <button
+      class="addFavCard2"
+    
+    >
+     Add to Favorite
+    </button>
+   <button
+      class="addFavCard2"
+     
+    >
+     Added to Favorite
+    </button>
+  </div>
+

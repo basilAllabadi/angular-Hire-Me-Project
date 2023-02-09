@@ -1,0 +1,51 @@
+<div class="userNavbar2">
+    <div class="home_navbar1" routerLink="/">
+
+        <p >
+            Home
+        </p>
+
+
+    </div>
+    <div class="userDetails_navbar1" routerLink="/login">
+        <p class="navbar_company" >
+            My Account
+        </p>
+
+    </div>
+
+
+
+    <div class="favJobs_navbar">
+        <p class="navbar_company">
+            My Favorite Jobs
+        </p>
+    </div>
+    <div class="complete_account_Navbar">
+
+        <p>
+            My Applied Jobs
+        </p>
+
+
+
+    </div>
+    <div class="applyJobs_navbar">
+    </div>
+
+    <div class="search_navbar1">
+
+    </div>
+    <div>
+
+
+    </div>
+    <div class="logout" *ngIf="isLoggedIn" (click)="logout()">
+
+        <p>
+            Logout
+        </p>
+    </div>
+
+
+</div>
